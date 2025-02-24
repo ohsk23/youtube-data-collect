@@ -2,3 +2,5 @@
 .env
 __pycache__
 /result/*
+01-yt-dlp/channels.txt
+03-exact-match/keywords.txt
