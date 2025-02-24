@@ -1,0 +1,19 @@
+ai
+artificial intelligence
+machine learning
+deep learning
+neural network
+nlp
+natural language processing
+llm
+large language model
+chatgpt
+gpt-2
+gpt-3
+gpt-3.5
+gpt-4
+openai
+gemini
+claude
+llama
+deepseek
