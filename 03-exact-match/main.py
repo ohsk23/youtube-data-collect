@@ -42,7 +42,7 @@ def main():
     keyword_file = "03-exact-match/keywords.txt"
     
     # CSV 파일 읽기
-    df = pd.read_csv(input_csv)
+    df = pd.read_csv(input_csv, low_memory=False)
     
     # 키워드 목록 읽기
     keywords_list = read_keywords(keyword_file)

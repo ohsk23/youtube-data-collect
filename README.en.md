@@ -39,7 +39,8 @@ https://www.youtube.com/channel/UCCjG8NtOig0USdrT5D1FpxQ NewsNation
 
 3. Run the following code from the project root
 
-- This may take 30 minutes to 2+ hours depending on the number of videos in the channel
+- This may take over 3 hours depending on the number of videos in the channel
+- Even if warning messages appear, data collection will proceed normally, so please wait patiently
 - If the resulting file is empty, retry the process
 
 ```bash
@@ -58,7 +59,7 @@ $ source ./01-yt-dlp/yt-dlp.sh
 $ python 02-preprocessing/main.py ./data/20240315
 ```
 
-2. Converted CSV files for each channel will be saved in `data/YYYYMMDD/csv`, and the merged file will be saved as `data/YYYYMMDD/all.csv`
+2. Converted CSV files for each channel will be saved in `data/YYYYMMDD/csv`, and the merged file will be saved as `data/YYYYMMDD/all.csv` (takes about 3 minutes)
 
 ### 3. Keyword Filtering Using Exact Match
 
@@ -84,9 +85,7 @@ deep learning
 neural network
 ```
 
-2. Run the code from the project root with your desired search options
-
-- Use the 'title' option to search only in titles, or 'title_desc' to search in both titles and descriptions
+2. Run the code from the project root with your desired search options (takes about 3 minutes)
 
 ```bash
 $ python 03-exact-match/main.py title ./data/20240315/all.csv
@@ -118,7 +117,7 @@ $ cd ../
 $ echo "YOUTUBE_API_KEY=YOUR_API_KEY_HERE" > 04-collect-metadata/.env
 ```
 
-2. Run `04-collect-metadata/main.py`. Enter the target file for metadata collection as an argument
+2. Run `04-collect-metadata/main.py`. Enter the target file for metadata collection as an argument (takes about 10 minutes)
 
 ```bash
 $ python 04-collect-metadata/main.py ./data/20240315/result_title.csv

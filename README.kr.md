@@ -39,7 +39,8 @@ https://www.youtube.com/channel/UCCjG8NtOig0USdrT5D1FpxQ NewsNation
 
 3. 프로젝트 루트에서 아래 코드를 실행한다.
 
-- 채널 내 영상 개수가 많은 경우 30분 ~ 2시간 이상 소요될 수 있다.
+- 채널 내 영상 개수가 많은 경우 3시간 이상 소요될 수 있다.
+- Warning 메세지가 나와도 데이터는 정상적으로 수집되므로 충분히 시간을 갖고 기다릴 것.
 - 실행 후 빈 파일인 경우 재시도해야 함.
 
 ```bash
@@ -58,7 +59,7 @@ $ source ./01-yt-dlp/yt-dlp.sh
 $ python 02-preprocessing/main.py ./data/20240315
 ```
 
-2. 채널 별로 변환된 CSV 파일이 `data/YYYYMMDD/csv` 폴더에 저장되며, 전체를 합친 파일은 `data/YYYYMMDD/all.csv` 파일에 저장된다.
+2. 채널 별로 변환된 CSV 파일이 `data/YYYYMMDD/csv` 폴더에 저장되며, 전체를 합친 파일은 `data/YYYYMMDD/all.csv` 파일에 저장된다. (3분 내외 소요)
 
 ### 3. exact match를 이용한 키워드 필터링
 
@@ -84,7 +85,7 @@ deep learning
 neural network
 ```
 
-2. 프로젝트 루트에서 원하는 검색 옵션에 따라 코드를 실행한다.
+2. 프로젝트 루트에서 원하는 검색 옵션에 따라 코드를 실행한다. (3분 내외 소요)
 
 - title에서만 검색을 원하는 경우 title 옵션을, title과 description에서 검색을 원하는 경우 title_desc 옵션을 입력한다.
 
@@ -118,7 +119,7 @@ $ cd ../
 $ echo "YOUTUBE_API_KEY=YOUR_API_KEY_HERE" > 04-collect-metadata/.env
 ```
 
-2. `04-collect-metadata/main.py` 파일을 실행한다. 메타데이터를 수집할 타겟 파일을 args로 입력한다.
+2. `04-collect-metadata/main.py` 파일을 실행한다. 메타데이터를 수집할 타겟 파일을 args로 입력한다. (10분 내외 소요)
 
 ```bash
 $ python 04-collect-metadata/main.py ./data/20240315/result_title.csv
