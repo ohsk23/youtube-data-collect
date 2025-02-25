@@ -22,6 +22,8 @@ A pipeline for collecting YouTube channel data, including video metadata and eng
    키워드 기반 콘텐츠 필터링
 4. Additional metadata collection (optional)
    추가 메타데이터 수집 (선택사항)
+5. Bias data collection (optional)
+   채널 bias 데이터와 결합
 
 Please refer to the README in your preferred language for detailed instructions.
 자세한 사용법은 원하시는 언어의 README를 참고해 주세요.

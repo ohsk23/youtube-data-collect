@@ -124,3 +124,18 @@ $ python 04-collect-metadata/main.py ./data/20240315/result_title.csv
 ```
 
 3. The file with collected metadata will be saved as {target_file_path}\_metadata.csv
+
+### 5. (Optional) Combining with Channel Bias Data
+
+1. Write channel bias data in the `05-bias-data/channel_bias.csv` file
+
+- Refer to the example file `channel_bias.sample.csv`
+
+2. Run the following code from the project root
+
+```bash
+$ python 05-bias-data/main.py
+# Enter the path to ./data/YYYYMMDD/result_title_metadata.csv file
+```
+
+3. The file with combined bias data will be saved as `{target_file_path}\_with_bias.csv`

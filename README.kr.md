@@ -126,3 +126,18 @@ $ python 04-collect-metadata/main.py ./data/20240315/result_title.csv
 ```
 
 3. 메타데이터가 수집된 파일은 {타겟 파일 경로}\_metadata.csv 파일에 저장된다.
+
+### 5. (Optional) 채널 bias 데이터와 결합
+
+1. `05-bias-data/channel_bias.csv` 파일에 채널 bias 데이터를 작성한다.
+
+- 해당 파일 예시인 `channel_bias.sample.csv` 파일을 참고하여 작성한다.
+
+2. 프로젝트 루트에서 아래 코드를 실행한다.
+
+```bash
+$ python 05-bias-data/main.py
+# ./data/YYYYMMDD/result_title_metadata.csv 파일 경로 입력
+```
+
+3. 채널 bias 데이터가 결합된 파일은 `{타겟 파일 경로}\_with_bias.csv` 파일에 저장된다.

@@ -3,5 +3,6 @@
 .env
 __pycache__
 /result/*
-channels.txt
-keywords.txt
+01-yt-dlp/channels.txt
+03-exact-match/keywords.txt
+05-bias-data/channel_bias.csv
