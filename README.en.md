@@ -6,6 +6,7 @@
 2. Convert all data to CSV and merge them
 3. Filter keywords using exact match
 4. (Optional) Collect additional video information (engagement data, etc.)
+5. (Optional) Combining with Channel Bias Data
 
 ### 1. Collecting Channel Video Data Using yt-dlp
 

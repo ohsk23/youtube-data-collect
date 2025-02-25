@@ -6,6 +6,7 @@
 2. 전체 데이터를 CSV로 변환하고 하나로 합침
 3. exact match를 이용한 키워드 필터링
 4. (Optional) 수집한 데이터에 대한 추가 영상 정보를 수집하기 (engagement data 등)
+5. (Optional) 채널 bias 데이터와 결합
 
 ### 1. yt-dlp 라이브러리를 이용하여 채널 전체 영상 데이터 수집
 
